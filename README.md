@@ -2,11 +2,11 @@
 ---
 
 ## Aim  
-To understand pointers and its uses:  
-1. Performing arithmetic operations between values using pointers.
-2. Reversing an array using pointers.
-3. Demonstrating pointer arithmetic for different data types.
-4. Traversing a character array (string) using pointers.
+To understand the concept of Inheritance in C++ and its applications:
+1. Demonstrating reusability of code through inheritance.
+2. Studying different types of inheritance (single, multiple, multilevel, hierarchical, hybrid).
+3. Understanding modes of inheritance (public, protected, private).
+4. Observing how base class constructors and members are accessed in derived classes.
 
 
 ---
@@ -17,18 +17,18 @@ VS Code or Programiz Online C++ Compiler.
 ---
 
 ## Objectives  
-- To learn the concept of pointers in C++.
-- To perform arithmetic operations on values accessed via pointers.
-- To traverse and reverse arrays using pointers.
-- To demonstrate pointer arithmetic for int, float, double, and bool types.
-- To iterate through a character array using pointers.
-
+- To learn the concept of base class and derived class.
+- To study how properties and methods of one class can be reused in another.
+- To explore public, protected, and private inheritance modes.
+- To identify advantages of inheritance in terms of reusability and extensibility.
+- To classify different types of inheritance in C++.
   
 ---
 
 ## Theory
 
 ### Why C++ is More Efficient than C
+```
 - C++ supports Object-Oriented Programming (OOP), which improves code reusability and maintainability.
 
 - Built-in string class makes string manipulation easier than C-style strings.
@@ -43,52 +43,69 @@ VS Code or Programiz Online C++ Compiler.
 
 - Direct support for function overloading and inline functions improves efficiency.
 
+```
+
 ### What is inheritance?  
+```
+
+1. Inheritance is a feature of Object-Oriented Programming (OOP) in which a new class (derived/child class) acquires the properties and functionalities of an existing class (base/parent class).
+2. It helps in code reusability, since we don’t have to write the same code multiple times.
+3. Inheritance establishes a relationship between classes, enabling hierarchies like parent → child.
+4. It forms the basis of polymorphism, where derived classes can redefine behaviors of base classes.
 
 ```
-1. Reusability is the main feature of OOP.
-2. The capability of a class to derive properties and characteristics from another class is called Inheritance. 
-3. Inheritance is one of the most important features of Object-Oriented Programming.
-4. Inheritance is a feature or a process in which, new classes are created from the existing classes.
-5. The new class created is called “derived class” or “child class” and the existing class is known as the “base class” or “parent class”. The derived class now is said to be inherited from the base class.
+
+### What is inheritance important?  
+```
+
+1. Promotes code reusability – existing code can be reused in new applications.
+2. Enhances maintainability – changes in base class automatically affect derived classes.
+3. Supports polymorphism – allows function overriding and runtime flexibility.
+4. Provides logical class hierarchies – represents real-world relationships (e.g., Vehicle → Car → SportsCar).
+5. Saves time and effort in development.
 
 ```
 
 ### Syntax:###  
 ```
-Syntax:
-data_type *pointer_name;
+class Base {
+    // base members
+};
 
-Examples:
-int *ptr; → Pointer to an integer.
-float *fptr; → Pointer to a float.
-char *cptr; → Pointer to a character.
-
-The data type of the pointer must match the type of variable it points to.
+class Derived : access-specifier Base {
+    // new or extended members
+};
 
 ```
 
-### How is pointer stored?  
+### Modes of Inheritance  
 ---
-1. A pointer itself is stored like any other variable in memory.
-2. It occupies a fixed number of bytes (4 bytes in 32-bit systems, 8 bytes in 64-bit systems).
-3. The value stored inside a pointer is an address, not actual data.
-4. When dereferenced (*pointer), the CPU accesses the value located at that address.
+
+Inheritance in C++ depends on the access specifier used:
+
+Public Inheritance-
+1. Public members of base → Public in derived.
+2. Protected members of base → Protected in derived.
+3. Private members → Not accessible in derived.
+
+Protected Inheritance-
+1. Public and Protected members of base → Protected in derived.
+2. Private members → Not accessible in derived.
+
+Private Inheritance-
+1. Public and Protected members of base → Private in derived.
+2. Private members → Not accessible in derived.
 
 ---
 
-### Types of pointers  
+### Types of inheritance  
 ---
-1. Null Pointer – Points to nothing (int *ptr = NULL;).
-2. Void Pointer (Generic Pointer) – Can hold the address of any data type (void *ptr;).
-3. Dangling Pointer – Points to memory that has been freed/deallocated.
-4. Wild Pointer – An uninitialized pointer (points to random memory).
-5. Constant Pointer – Pointer cannot change the address it holds, but the value at that address can change (int * const ptr).
-6. Pointer to Constant – Pointer can change the address it holds, but cannot change the value (const int *ptr).
-7. Constant Pointer to Constant – Neither the pointer’s address nor the value can change (const int * const ptr).
-8. Function Pointer – Holds the address of a function (void (*fptr)()).
-9. Pointer to Pointer (Double Pointer) – Stores the address of another pointer (int **pp).
-10. Array Pointer – Points to the first element of an array (int *ptr = arr;).
+
+Single inheritance-
+In single inheritance, a class is allowed to inherit from only one class. i.e. one subclass is inherited by one base class only.
+
+Multiple inheritance-
+Multiple Inheritance is a feature of C++ where a class can inherit from more than one class. i.e one subclass is inherited from more than one base class.
 
 ---
 
