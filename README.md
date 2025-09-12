@@ -98,7 +98,7 @@ Private Inheritance-
 ---
 
 1. Single inheritance-
-- In single inheritance, a class is allowed to inherit from only one class. i.e. one subclass is inherited by one base class only.
+In single inheritance, a class is allowed to inherit from only one class. i.e. one subclass is inherited by one base class only.
 2. Multiple inheritance-
 Multiple Inheritance is a feature of C++ where a class can inherit from more than one class. i.e one subclass is inherited from more than one base class.
 3. Multilevel inheritance-
