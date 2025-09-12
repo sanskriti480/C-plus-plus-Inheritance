@@ -97,20 +97,13 @@ Private Inheritance-
 ### Types of inheritance  
 ---
 
-Single inheritance-
-
+1. Single inheritance-
 In single inheritance, a class is allowed to inherit from only one class. i.e. one subclass is inherited by one base class only.
-
-Multiple inheritance-
-
+2. Multiple inheritance-
 Multiple Inheritance is a feature of C++ where a class can inherit from more than one class. i.e one subclass is inherited from more than one base class.
-
-Multilevel inheritance-
-
+3. Multilevel inheritance-
 In this type of inheritance, a derived class is created from another derived class.
-
-Hierarchical Inheritance-
-
+4. Hierarchical Inheritance-
 In this type of inheritance, more than one subclass is inherited from a single base class. i.e. more than one derived class is created from a single base class.
 
 ---
