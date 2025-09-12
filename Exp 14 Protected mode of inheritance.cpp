@@ -1,3 +1,8 @@
+//Sanskriti Khairnar
+//PRN-24070123054
+//Batch-A2
+//Experiment 14
+
 #include <iostream>
 using namespace std;
 
