@@ -30,17 +30,11 @@ VS Code or Programiz Online C++ Compiler.
 ### Why C++ is More Efficient than C
 ```
 - C++ supports Object-Oriented Programming (OOP), which improves code reusability and maintainability.
-
 - Built-in string class makes string manipulation easier than C-style strings.
-
 - Rich Standard Template Library (STL) reduces coding time.
-
 - Better type safety compared to C.
-
 - Function overloading and templates provide flexibility.
-
 - Memory management tools like RAII help prevent leaks.
-
 - Direct support for function overloading and inline functions improves efficiency.
 
 ```
@@ -48,7 +42,8 @@ VS Code or Programiz Online C++ Compiler.
 ### What is inheritance?  
 ```
 
-1. Inheritance is a feature of Object-Oriented Programming (OOP) in which a new class (derived/child class) acquires the properties and functionalities of an existing class (base/parent class).
+1. Inheritance is a feature of Object-Oriented Programming (OOP) in which a new class (derived/child class) acquires the
+properties and functionalities of an existing class (base/parent class).
 2. It helps in code reusability, since we don’t have to write the same code multiple times.
 3. Inheritance establishes a relationship between classes, enabling hierarchies like parent → child.
 4. It forms the basis of polymorphism, where derived classes can redefine behaviors of base classes.
