@@ -98,10 +98,20 @@ Private Inheritance-
 ---
 
 Single inheritance-
+
 In single inheritance, a class is allowed to inherit from only one class. i.e. one subclass is inherited by one base class only.
 
 Multiple inheritance-
+
 Multiple Inheritance is a feature of C++ where a class can inherit from more than one class. i.e one subclass is inherited from more than one base class.
+
+Multilevel inheritance-
+
+In this type of inheritance, a derived class is created from another derived class.
+
+Hierarchical Inheritance-
+
+In this type of inheritance, more than one subclass is inherited from a single base class. i.e. more than one derived class is created from a single base class.
 
 ---
 
@@ -114,148 +124,47 @@ Multiple Inheritance is a feature of C++ where a class can inherit from more tha
 
 ---
 
-### Advantages od pointers 
----
-- Dynamic Memory Allocation – Helps allocate and free memory at runtime using malloc, calloc, free (in C) or new/delete (in C++).
-- Efficient Array & String Handling – Makes it easier to traverse arrays and manipulate strings.
-- Function Arguments – Allows functions to modify actual variables (call by reference).
-- Data Structures – Essential for implementing linked lists, stacks, queues, trees, and graphs.
-- Memory Efficiency – Saves memory in some cases by directly working with memory addresses.
-- Hardware Interaction – Useful in system programming (e.g., accessing memory-mapped devices).
-- Function Pointers – Allow passing functions as arguments, enabling callbacks and flexibility in code.
-
+### Advantages of inheritance 
 ---
 
-### Disadvantages od pointers 
----
-- Complexity – Pointers make the program logic harder to read and understand.
-- Errors & Bugs – Easy to make mistakes like dangling pointers, wild pointers, null dereferencing.
-- Security Issues – Improper use can lead to memory leaks, crashes, or vulnerabilities (buffer overflow).
-- Hard to Debug – Pointer-related errors are difficult to trace and fix.
-- Memory Management Risk – Programmer must manually allocate and deallocate memory; forgetting causes memory leaks.
-- Portability Issues – Direct memory manipulation may behave differently on different systems.
+- Code Reusability – Reuse base class functionality in derived classes.
+- Extensibility – Add new features to existing classes without rewriting.
+- Saves Time & Effort – Reduces duplication.
+- Supports Polymorphism – Enables function overriding and dynamic behavior.
+- Organized Structure – Represents real-world hierarchies clearly.
 
 ---
 
-### Why are pointers better than arrays
----
-- Arrays are fixed size, pointers allow dynamic size (runtime allocation).
-- Arrays are static & contiguous, pointers allow flexible data structures (linked list, trees).
-- Pointers give better memory efficiency and faster traversal/control.
-
+### Disadvantages of inheritance
 ---
 
-### Why are pointers better than strings
----
-- Strings in arrays are hard to resize, but pointers allow dynamic strings.
-- Pointers make string operations easier (traversal, function calls).
-- Pointers use less memory (allocate exact size, no wastage).
-- Passing strings via pointers is faster (just passes address).
-
----
-
-## Algorithms
-
-### Program 1 Increment of pointers
----
-
-- Start
-- Declare variables of different data types:
-
-a as int
-
-b as float
-
-c as double
-
-d as bool
-- Declare pointers for each variable and store their addresses:
-
-aptr = &a
-
-bptr = &b
-
-cptr = &c
-
-dptr = &d
-- For each pointer:
-a. Print the address before increment.
-b. Increment the pointer by 1 (ptr++).
-c. Print the address after increment.
-- End.
-
----
-
-### Program 2 Difference / Addition
----
-
-- Start
-- Declare two integer variables x = 100 and y = 50.
-- Declare an integer pointer xptr and assign it the address of x.
-- Declare another integer pointer yptr and assign it the address of y.
-- Dereference both pointers and calculate the sum:
-
-sum = *xptr + *yptr.
-
-- Print the result → "Sum is: sum".
-- Dereference both pointers and calculate the difference:
-difference = *xptr - *yptr.
-- Print the result → "Difference is: difference".
-- End 
----
-
-### Program 3 Traversing array using pointer
----
-
-- Start
-- Declare an integer array arr[5] = {2, 4, 6, 8, 10}.
-- Initialize a pointer ptr to point to the last element of the array (arr + 4).
-- Use a for loop that runs from index i = 4 down to 0:
+- Increased Complexity – Multiple levels of inheritance may be difficult to manage.
+- Tight Coupling – Derived class depends heavily on base class.
+- Unexpected Behavior – Overridden methods may cause errors if not carefully implemented.
+- Performance Issues – Virtual function tables (used in polymorphism) add overhead.
+- Not Always the Best Choice – Sometimes composition (has-a relationship) is better than inheritance (is-a relationship).
   
-  Print the value pointed to by ptr (*ptr).
-  
-  Decrement the pointer (ptr--) so it moves to the previous element.
-- After the loop ends, all elements of the array are printed in reverse order.
-- End
-
 ---
 
-### Program 4 Printing string using pointers
----
 
-- Start
-- Declare a character array str[] = "Hello World".
-- Initialize a pointer ptr to point to the first character of the string (ptr = str).
-- Begin a while loop that runs until the character pointed to by ptr is the null terminator ('\0').
-- 
-Print the character at *ptr.
-
-Increment the pointer (ptr++) to move to the next character.
-- When *ptr == '\0', exit the loop.
-- End
-
----
 
 ## Concepts Used  
 ---
 
-- Pointer declaration and initialization.
-- Dereferencing (* operator).
-- Address-of operator (&).
-- Pointer arithmetic (increment and decrement).
-- Array traversal using pointers.
-- Character array traversal.
-- Type-dependent pointer incrementation.
-- Null pointers and void pointers.
-- Memory representation of pointers.
+- Base and derived class relationships.
+- Modes of inheritance (public, protected, private).
+- Types of inheritance (single, multiple, multilevel, hierarchical, hybrid).
+- Constructor and destructor call order in inheritance.
+- Function overriding and polymorphism.
 
 ---
 
 ## Conclusion
 ---
 
-- In this experiment, we learned the use of pointers to access and manipulate data using memory addresses. 
-- We performed arithmetic operations, array reversal, and string traversal using pointers. 
-- This shows that pointers provide efficient memory access, flexibility, and are essential for advanced concepts like dynamic memory allocation.
+- In this experiment, we studied Inheritance in C++, including its types and modes.
+- We understood how one class can acquire the properties of another, improving reusability and extensibility.
+- We also explored the advantages and limitations of inheritance.
+- Overall, inheritance is a powerful concept in OOP that helps in writing modular, maintainable, and reusable code.
 
 ---
