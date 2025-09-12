@@ -139,7 +139,24 @@ In this type of inheritance, more than one subclass is inherited from a single b
   
 ---
 
+## Algorithm
 
+---
+
+1. Start the program.
+2. Create a base class Vehicle:
+   - Data member: brand = "Ford".
+   - Member function: color() prints "Red!".
+3. Create a derived class Car that inherits from Vehicle:
+   - Data member: model = "Mustang".
+   - Inside main() function:
+4. Declare an object myCar of class Car.
+   - Call myCar.color() → inherited method from Vehicle.
+   - Access myCar.brand (from Vehicle) and myCar.model (from Car) together.
+   - Print the brand and model.
+5. End the program.  
+
+---
 
 ## Concepts Used  
 ---
