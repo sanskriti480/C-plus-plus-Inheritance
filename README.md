@@ -195,7 +195,7 @@ In this type of inheritance, more than one subclass is inherited from a single b
              - Initializes rollNo with r.
         - showStudent() →
               - Calls showPerson() from base class to display name and age.
-              - Displays rollNo.
+               - Displays rollNo.
 4. In main() function:
     - Create object s of class Student.
     - Call s.setStudent("Ankit", 20, 101) to initialize data.
