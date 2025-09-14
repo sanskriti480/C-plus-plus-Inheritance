@@ -140,8 +140,9 @@ In this type of inheritance, more than one subclass is inherited from a single b
 ---
 
 ## Algorithm
-
 ---
+
+### Program 1 : Public mode of inheritance
 
 1. Start the program.
 2. Create a base class Vehicle:
@@ -155,6 +156,28 @@ In this type of inheritance, more than one subclass is inherited from a single b
    - Access myCar.brand (from Vehicle) and myCar.model (from Car) together.
    - Print the brand and model.
 5. End the program.  
+
+### Program 2 : Protected mode of inheritance
+
+1. Start the program.
+2. Create a Base Class Vehicle:
+   - Data member: brand initialized to "Ford".
+   - Member function: color() prints "Red!".
+3. Create a Derived Class Car using protected inheritance:
+   - Data member: model initialized to "Mustang".
+   - Member function showDetails():
+       - Call color() function from base class.
+       - Print brand and model.
+       - Note: Base members (brand and color()) are accessible inside Car because they become protected.
+4. Create a Further Derived Class SportsCar (inherits publicly from Car):
+   - Member function showSportsCar():
+        - Call color() function from base class (accessible because of protected inheritance).
+        - Print brand, model, and " [Sports Edition]".
+5. In main() function:
+   - Create object myCar of class Car and call myCar.showDetails().
+   - Create object s of class SportsCar and call s.showSportsCar().
+   - Do not access brand or color() directly from main() for Car object because they are protected due to inheritance.
+6. End program.
 
 ---
 
