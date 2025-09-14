@@ -179,6 +179,30 @@ In this type of inheritance, more than one subclass is inherited from a single b
    - Do not access brand or color() directly from main() for Car object because they are protected due to inheritance.
 6. End program.
 
+### Program 3 : Private mode of inheritance
+
+1. Start the program.
+2. Create a Base Class Person:
+   - Protected data members: name and age.
+   - Public member functions:
+       - setPerson(string n, int a) → assigns values to name and age.
+       - showPerson() → prints name and age.
+3. Create a Derived Class Student using private inheritance from Person:
+   - Private data member: rollNo.
+   - Public member functions:
+        - setStudent(string n, int a, int r) →
+             - Calls setPerson(n, a) from base class to initialize name and age.
+             - Initializes rollNo with r.
+        - showStudent() →
+              - Calls showPerson() from base class to display name and age.
+              - Displays rollNo.
+4. In main() function:
+    - Create object s of class Student.
+    - Call s.setStudent("Ankit", 20, 101) to initialize data.
+    - Call s.showStudent() to display all information.
+    - Direct access to setPerson() and showPerson() is not allowed in main() because of private inheritance.
+5. End program.
+
 ---
 
 ## Concepts Used  
