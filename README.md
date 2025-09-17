@@ -203,6 +203,38 @@ In this type of inheritance, more than one subclass is inherited from a single b
     - Direct access to setPerson() and showPerson() is not allowed in main() because of private inheritance.
 5. End program.
 
+### Single inheritance
+
+1. Start program.
+2. Define a base class Rectangle with:
+   - Data members: width, height.
+   - Function read_input() → read width and height from user.
+   - Function display() → print width and height.
+3. Define a derived class RectangleArea (inherits publicly from Rectangle) with:
+   - Function display() (overrides base function) → calculate and print area = width × height.
+4. In main():
+   - Create object r_area of class RectangleArea.
+   - Call r_area.read_input() → input dimensions.
+  - Call r_area.Rectangle::display() → show width and height.
+   - Call r_area.display() → show area.
+5. End program.
+
+### Multiple inheritance
+
+1. Start program.
+2. Define base class Vehicle:
+   - Function show() → prints "I am a Vehicle".
+3. Define derived class Car (inherits from Vehicle):
+   - Function showCar() → prints "I am a Car".
+4. Define further derived class ElectricCar (inherits from Car):
+   - Function showElectric() → prints "I am an Electric Car".
+5. In main():
+   - Create object e of class ElectricCar.
+   - Call e.show() → inherited from Vehicle.
+   - Call e.showCar() → inherited from Car.
+   - Call e.showElectric() → defined in ElectricCar.
+6. End program.
+
 ---
 
 ## Concepts Used  
